@@ -125,7 +125,7 @@ nav ul li a {
 }
 
 .main-content .black {
-    padding: 6%;
+    padding: 1%;
     color: black;
 }
 
@@ -267,26 +267,50 @@ footer>p {
         padding: 0 10%;
         margin: 10px;
     }
-    .visit {
-        flex-wrap: wrap;
-        padding: 20px;
-        text-align: center;
+    .visit-gym,
+    .visit-personal {
+        height: auto;
     }
     .visit img {
         height: auto;
-        max-width: 100%;
+        width: 100%;
+        background: var(--main-grey);
     }
     .visit-gym,
     .visit-personal {
         height: auto;
-        margin: 20px 0;
     }
-    .visit p {
-        margin: 10px 0;
-        padding: 10px 0;
+    .visit {
+        display: flex;
+        flex-wrap: wrap;
+        background: var(--main-lightgrey);
+        padding: 20px;
+        text-align: center;
+    }
+    .visit-gym,
+    .visit-personal {
+        text-align: center;
+        height: 450px;
+    }
+    .visit img {
+        margin-top: 30px;
+        height: 200px;
+        width: 300px;
+        background: var(--main-grey);
+    }
+    .visit-gym p,
+    .visit-personal p {
+        margin: 10px 30px;
+        padding: 10px 10px;
     }
     .visit a {
-        margin-top: 20px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        color: var(--main-darkgrey);
+        border-radius: 5%;
+        padding: 10px 20px;
+        border: 1px solid var(--main-darkgrey);
     }
     .volunteer h2 {
         padding: 2%;
